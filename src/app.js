@@ -10,7 +10,8 @@ require("dotenv").config();
 
 //This middleware solve the cors error
 app.use(cors({
-  origin:"http://localhost:5173",
+  // origin:"http://localhost:5173",
+  origin:"dev-tinder-web-iota-gules.vercel.app",
   credentials:true,
 }));
 
