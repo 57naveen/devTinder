@@ -10,7 +10,7 @@ require("dotenv").config();
 
 //This middleware solve the cors error
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"http://16.170.231.228",
   credentials:true,
 }));
 
