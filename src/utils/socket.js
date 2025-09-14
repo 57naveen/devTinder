@@ -12,7 +12,10 @@ const getSecretRoomId = (userId, toTargetUserId) => {
 const initializeSocket = (server) => {
   const io = socket(server, {
     cors: {
-      origin: "http://localhost:5173",
+      // origin: "http://localhost:5173",
+      // origin: "https://dev-tinder-web-iota-gules.vercel.app",
+        origin:"http://16.170.231.228",
+
     },
   });
 
