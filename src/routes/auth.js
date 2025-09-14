@@ -70,7 +70,7 @@ authRouter.post("/login", async (req, res) => {
       res.cookie("token", token, {
         httpOnly: true,
         sameSite: "None", // REQUIRED for cross-origin
-        secure: true, // REQUIRED when sameSite is "None"
+        secure: false, // REQUIRED when sameSite is "None"
         expires: new Date(Date.now() + 8 * 3600000),
       });
 
