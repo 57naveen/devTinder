@@ -13,7 +13,7 @@ const initializeSocket = (server) => {
   const io = socket(server, {
    path: "/api/socket.io",   // 👈 custom path
     cors: {
-      origin: "http://16.170.231.228",
+      origin: "https://devtinder-backend-mosg.onrender.com",
       credentials: true,
     },
   });
